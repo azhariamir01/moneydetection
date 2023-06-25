@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Detection Result</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/result_style.css">
+</head>
+<body>
+    <h1>Total sum: {{ total }}</h1>
+    <ul>
+    {% for object in objects %}
+      <li>{{ object }}</li>
+    {% endfor %}
+    </ul>
+
+    <button id="TTS" style="text-decoration: none" class="custom-tts">Text to speech</button>
+
+    <a style="text-decoration: none" href="/" class="custom-return">Return</a>
+
+    <script src="{{ url_for('static', filename='js/result_script.js') }}"></script>
+    <script>
+        var total = "Total sum: {{ total }}"
+        var objects = [
+            total,
+            {% for object in objects %}
+                "{{ object }}",
+            {% endfor %}
+        ];
+        document.getElementById("TTS").addEventListener("click", function() {
+            TTS(objects);
+        });
+    </script>
+</body>
+</html>

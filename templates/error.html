@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/error_style.css">
+
+</head>
+<body>
+    <h1>Oops! Something went wrong</h1>
+    <h2>{{ error }}</h2>
+
+
+    <button id="TTS" style="text-decoration: none" class="custom-tts">Text to speech</button>
+
+    <a style="text-decoration: none" href="/" class="custom-return">Return</a>
+
+
+    <script src="{{ url_for('static', filename='js/result_script.js') }}"></script>
+    <script>
+        var error_message = "Oops! Something went wrong"
+        var objects = [
+            error_message,
+            "{{ error }}"
+        ];
+        document.getElementById("TTS").addEventListener("click", function() {
+            TTS(objects);
+        });
+    </script>
+</body>
+</html>
