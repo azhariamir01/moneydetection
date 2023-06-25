@@ -8,10 +8,11 @@ application.  It supports JavaScript, HTML and CSS within the IDE, without needi
 outside the two mentioned above.
 
 Repository link: 
+https://gitlab.upt.ro/ali.azhari/moneydetection
 
 In order to get the repository, please run the following command:
 ```
-git clone
+git clone https://gitlab.upt.ro/ali.azhari/moneydetection
 ```
 Or download the code as a .zip from the repository link and open it within PyCharm.
 
