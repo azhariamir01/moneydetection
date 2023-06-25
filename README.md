@@ -1,3 +1,5 @@
+# App Requirements
+
 In order to run this application you need the following:
 - Python >= 3.9
 - PyCharm
@@ -7,16 +9,20 @@ The reason we use PyCharm is that it's an IDE that supports all the programming 
 application.  It supports JavaScript, HTML and CSS within the IDE, without needing additional frameworks or installations
 outside the two mentioned above.
 
-Repository link: 
-https://github.com/azhariamir01/moneydetection
+# Repository link: 
+
+Gitlab: https://gitlab.upt.ro/ali.azhari/moneydetection
+Github: https://github.com/azhariamir01/moneydetection
 
 In order to get the repository, please run the following command:
 ```
-git clone https://github.com/azhariamir01/moneydetection
+git clone https://gitlab.upt.ro/ali.azhari/moneydetection
 ```
 Or download the code as a .zip from the repository link and open it within PyCharm.
 
-Then, create a virtual environment by running the following commands in the PyCharm terminal:
+# Create virtual environment
+
+To create a virtual environment by running the following commands in the PyCharm terminal:
 
 ```
 cd path/to/your/project
@@ -24,6 +30,8 @@ python -m venv MyVirtualEnvironment
 MyVirtualEnvironment\Scripts\activate
 ```
 Replace *MyVirtualEnvironment* with the desired name for the environment.
+
+# Run the app
 
 To install the requirements for the application run the following command:
 ```
