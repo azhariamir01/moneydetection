@@ -12,6 +12,7 @@ outside the two mentioned above.
 # Repository link: 
 
 Gitlab: https://gitlab.upt.ro/ali.azhari/moneydetection
+
 Github: https://github.com/azhariamir01/moneydetection
 
 In order to get the repository, please run the following command:
